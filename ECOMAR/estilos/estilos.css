@@ -1,0 +1,492 @@
+@media (max-width:1400px) {
+    .main-viaje-a-misiones section div p{
+        font-size: 1.19vw !important;
+    }
+}
+
+@media (max-width:991px) {
+    .inicio-seccion-1 {
+        padding: 0 !important;
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+
+    .inicio-seccion-2 {
+        padding: 0 !important;
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+
+    .cuidados-secciones-p {
+        font-size: 2vw !important;
+    }
+    .cuidados-seccion-3 {
+        height: 600px !important;
+    }
+    .cuidados-seccion-3 ol{
+        padding: 0 70px !important;
+    }
+
+    .main-viaje-a-misiones section div p{
+        font-size: 2vw !important;
+    }
+
+    .nav-lista-colapsada {
+        background-color: white;
+        height: 270px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+        right: 0px;
+        text-align: center;
+    }
+
+    .nav-lista ul li a{
+        color: #3966D5 !important;
+    }
+
+    .nav-boton{
+        padding-top: 34px;
+        padding-right: 14px;
+    }
+
+    .nav-boton:hover {
+        transform: initial !important;
+    }
+
+    #divSubirArchivo{
+        width: 400px !important;
+        height: 400px !important;
+    }
+}
+
+@media (max-width:767px) {
+    .cuidados-seccion-3 {
+        height: 800px !important;
+    }
+
+    .main-viaje-a-misiones section div p{
+        font-size: 3vw !important;
+    }
+}
+
+@media (max-width:580px) {
+    .inicio-seccion-1 {
+        padding: 0 !important;
+        background-size: auto;
+    }
+
+    .inicio-seccion-2 {
+        padding: 0 !important;
+        background-size: auto;
+    }
+
+    .cuidados-secciones-p {
+        font-size: 3vw !important;
+    }
+    .cuidados-seccion-3 {
+        height: 840px !important;
+    }
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: Poppins !important;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+ul {
+    margin: 0px !important;
+}
+
+.nav-fluid {
+    background-image: url(../img/fondo_nav.png);
+    height: 187px;
+    filter: drop-shadow(1px 1px 7px rgba(0, 0, 0, 0.163));
+    display: flex;
+    align-items: baseline !important;
+    position: relative;
+    z-index: 3;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.nav-container img {
+    width: 6rem;
+}
+
+.nav-lista ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-lista ul li a {
+    text-decoration: none;
+    color: #3966D5;
+    font-weight: 600;
+    font-size: 1rem !important;
+    transition: 300ms;
+}
+
+.nav-lista ul li a:hover {
+    color: #274590;
+}
+
+.nav-boton a {
+    text-decoration: none;
+    border-radius: 40px;
+    padding: 6px 25px;
+    background-image: url(../img/fondo-boton-nav.png);
+    background-position: right;
+    color: white;
+    font-weight: 500;
+    transition: 300ms;
+}
+
+.nav-boton {
+    transition: 300ms;
+}
+
+.nav-boton:hover {
+    transform: scale(1.1);
+}
+
+.nav-boton a:hover {
+    background-position: left;
+}
+
+.portada-inicio {
+    background-image: url(../img/portada_inicio.png);
+    position: relative;
+    bottom: 35px;
+    height: 500px;
+    z-index: 2;
+}
+
+.portada-h1 {
+    font-weight: 800;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 5vh;
+}
+
+.portada-p {
+    font-weight: 400;
+    color: #D9D9D9;
+    font-size: 3vmin;
+}
+
+.inicio-seccion-1 {
+    background-image: url(../img/inicio-seccion-1.png);
+    height: 570px;
+    width: 100%;
+    border-radius: 20px;
+    background-position: right;
+}
+
+.inicio-sections-h2 {
+    font-weight: 800;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 5vh;
+}
+
+.inicio-sections-p {
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 2.7vmin;
+}
+
+.inicio-seccion-2 {
+    background-image: url(../img/inicio-seccion-2.png);
+    height: 570px;
+    width: 100%;
+    border-radius: 20px;
+    background-position: left;
+}
+
+footer {
+    height: auto;
+    color: white;
+    background-color: #404040;
+}
+
+.footer-container {
+    padding: 30px 0px;
+}
+
+.footer-container div .footer-ul ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 52px;
+    padding: 0 !important;
+}
+
+.footer-container div .footer-ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.portada-cuidados {
+    background-image: url(../img/portada_cuidados.png);
+    position: relative;
+    bottom: 35px;
+    height: 500px;
+    z-index: 2;
+}
+
+/* Cuidados */
+
+.cuidados-secciones-h2 {
+    color: #3966D5;
+    font-weight: 700;
+}
+
+.cuidados-secciones-p {
+    font-weight: 400;
+    font-size: 1.43vw;
+    color: #515151;
+}
+
+.cuidados-seccion-3 {
+    background-image: url(../img/cuidados-seccion-3.png);
+    height: 500px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+/* Viaje a misiones */
+
+.portada-viaje-a-misiones {
+    background-image: url(../img/portada_viaje_a_misiones.png);
+    position: relative;
+    bottom: 35px;
+    height: 500px;
+    z-index: 2;
+}
+    
+.frase-viaje-a-misiones h2{
+    color: #3966D5;
+    text-align: center;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.main-viaje-a-misiones{
+    background-image: url(../img/seccion_viaje_a_misiones.png);
+}
+
+.texto-seccion-viaje-a-misiones{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-seccion-viaje-a-misiones h3{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.texto-seccion-viaje-a-misiones h2{
+    font-size: 39px;
+    font-weight: 700;
+}
+
+hr{
+    border: #3966D5 2px solid !important;
+    width: 234px !important;
+}
+
+/* Contacto */
+
+.portada-contacto {
+    background-image: url(../img/portada_contacto.png);
+    position: relative;
+    bottom: 35px;
+    height: 500px;
+    z-index: 2;
+}
+
+.contacto-seccion-1 h2{
+    font-weight: 800;
+    color: #3966D5;
+    font-size: 50px;
+}
+
+.contacto-seccion-1 p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #3965d594;
+}
+
+.caja-formulario{
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.115);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+form input{
+    border: none;
+    border-bottom: #3966D5 solid 3px;
+    background-color: #F8F8F8;
+    
+}
+
+form input::placeholder{
+    color: #3965d5a1;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form textarea{
+    border: #3966D5 3px solid;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-color: #F8F8F8;
+}
+
+form textarea::placeholder{
+    color: #3965d5a1;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+.boton{
+    height: 70px;
+    width: 70px;
+    background-color: #4d7fff;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border-radius: 40px;
+    transition: 300ms;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton:hover{
+    transform: scale(1.07);
+}
+
+#boton-submit{
+    background-color: #3966D5;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: 800;
+    border-radius: 15px;
+}
+
+/* Unete */
+
+.portada-unete {
+    background-image: url(../img/portada_unete.png);
+    position: relative;
+    bottom: 35px;
+    height: 350px;
+    z-index: 2;
+}
+
+.caja-unete{
+    width: 460px !important;
+    height: 300px;
+    background-color: #3966D5;
+    border-radius: 17px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+#feedback-form {
+    user-select: none;
+    position: fixed;
+    top: 20%;
+    background-color: #ffffff;
+    padding: 7px;
+    z-index: 4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 10px 10px 0;
+  }
+  
+  #feedback-button {
+    background-color: #3966D5;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #arrow {
+    font-size: 16px;
+  }
+  
+  #feedback-content {
+    display: none;
+    opacity: 0;
+    margin-top: 10px;
+  }
+  
+  #feedback-header {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1px;
+  }
+  
+  #feedback-stars {
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+  
+  .star {
+    margin-right: 5px;
+    transition: color 0.1s ease-in-out;
+  }
+  
+  .star:hover,
+  .star:hover ~ .star,
+  .star.selected,
+  .star.hovered,
+  .star.hovered ~ .star {
+    color: #ffce00;
+  }
+  
+  #feedback-form.expanded #feedback-content {
+    display: block;
+    opacity: 1;
+  }
+  
