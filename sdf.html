@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seleccionar y mostrar imagen</title>
+    <style>
+        body{
+            font-family: Poppins;
+        }
+
+      #imagen_entrar {
+        position: relative;
+        background-color: #F0F0F0;
+        border-style: dashed;
+        border-width: 2px;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      #imagen_entrar p {
+        color: #0000009d;
+        font-size: 30px;
+        margin-bottom: 20px;
+        font-weight: 800;
+      }
+      
+      #imagen_entrar img {
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+      
+      #seleccionarBtn {
+        position: absolute;
+        bottom: 10px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="imagen_entrar">
+      <p>SUBE TU ARCHIVO</p>
+      <button id="seleccionarBtn">Seleccionar</button>
+    </div>
+
+    <script>
+      var entrarContainer = document.getElementById("imagen_entrar");
+      var seleccionarBtn = document.getElementById("seleccionarBtn");
+      var input = document.createElement("input");
+      input.type = "file";
+      input.accept = "image/*";
+      input.style.display = "none";
+      entrarContainer.appendChild(input);
+
+      entrarContainer.addEventListener("click", function() {
+        input.click();
+      });
+
+      input.addEventListener("change", function() {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            var img = document.createElement("img");
+            img.src = e.target.result;
+            entrarContainer.innerHTML = "";
+            entrarContainer.appendChild(img);
+            entrarContainer.appendChild(seleccionarBtn);
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      });
+    </script>
+  </body>
+</html>
