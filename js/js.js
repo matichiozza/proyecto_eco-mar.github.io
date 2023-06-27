@@ -29,49 +29,6 @@ function rate(rating) {
 }
 
 
-
-
-
-
-
-
-var entrarContainer = document.getElementById("imagen_entrar");
-var seleccionarBtn = document.getElementById("seleccionarBtn");
-var input = document.createElement("input");
-input.type = "file";
-input.accept = "image/*";
-input.style.display = "none";
-entrarContainer.appendChild(input);
-
-entrarContainer.addEventListener("click", function() {
-  input.click();
-});
-
-input.addEventListener("change", function() {
-  if (input.files && input.files[0]) {
-    var reader = new FileReader();
-
-    reader.onload = function(e) {
-      var img = document.createElement("img");
-      img.src = e.target.result;
-      entrarContainer.innerHTML = "";
-      entrarContainer.appendChild(img);
-      entrarContainer.appendChild(seleccionarBtn);
-    };
-
-    reader.readAsDataURL(input.files[0]);
-  }
-});
-
-
-
-
-
-
-
-
-
-
 const form = document.querySelector('#form1');
 
   form.addEventListener('submit', function(event) {
